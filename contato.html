@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="components/images/favicon.png" />
+    <link rel="stylesheet" href="styles/style-contato.css" />
+    <link rel="stylesheet" href="styles/fonts-obrigado.css" />
+    <link rel="stylesheet" href="styles/media-obrigado.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="title">
+        <h1>Bruno's</h1>
+        <h1>site</h1>
+      </div>
+      <ul>
+        <a href="index.html"><li>Início</li></a>
+        <!-- <a href="#"><li>Serviços</li></a> -->
+        <!-- <a href="#"><li>Sobre</li></a> -->
+        <a href="contato.html"><li>Contato</li></a>
+      </ul>
+    </header>
+
+    <main>
+      <aside>
+        <h2>Em qual horário você deseja <br />nosso contato?</h2>
+        <p>
+          Escolha as opções abaixo e preencha corretamente para entrarmos em
+          contato com você no horario correto!
+        </p>
+
+        <form>
+          <!-- campo de texto -->
+          <div class="form-texto">
+            <input
+              type="text"
+              class="input-texto"
+              required
+              placeholder="Nome"
+            />
+            <input
+              type="email"
+              class="input-texto"
+              required
+              placeholder="E-mail"
+            />
+            <input
+              type="tel"
+              class="input-texto"
+              required
+              placeholder="Telefone"
+            />
+            <br />
+          </div>
+          <!-- multipla escolha -->
+          <div>
+            <label for="radio-email">
+              <input
+                type="radio"
+                name="contato"
+                id="radio-email"
+                class="padrao-input"
+                value="E-mail"
+              />Email</label
+            >
+            <br />
+            <label for="radio-ligacao">
+              <input
+                type="radio"
+                name="contato"
+                id="radio-ligacao"
+                class="padrao-input"
+                value="Ligação"
+              />Ligação</label
+            >
+            <br />
+            <label for="radio-zap">
+              <input
+                type="radio"
+                name="contato"
+                id="radio-zap"
+                class="padrao-input"
+                value="Zap" checked
+              />Whatsaap</label
+            >
+            <br />
+            <label
+              ><input type="checkbox" class="padrao-input" checked/>
+              Receber novidades por E-mail?
+            </label>
+          </div>
+
+          <fieldset class="horarios">
+            <legend>Em qual horário deseja nosso contato?</legend>
+            <select>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Noite</option>
+            </select>
+          </fieldset>
+
+          <table>
+            <tr>
+              <td>Dia</td>
+              <td>Horário</td>
+            </tr>
+            <tr>
+              <td>Segunda hà Sexta -----</td>
+              <td>7h - 19h</td>
+            </tr>
+            <tr>
+              <td>Sabado --------------</td>
+              <td>8h - 17h</td>
+            </tr>
+          </table>
+
+          <input
+            type="submit"
+            class="input-enviar"
+            id="myButton"
+            value="Enviar"
+          />
+        </form>
+      </aside>
+
+      <article>
+        <img src="./components/images/chat.svg" alt="Imagem" />
+      </article>
+    </main>
+  </body>
+</html>
